@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sanchizas007.github.io/jurnaro-site/sitemap.xml

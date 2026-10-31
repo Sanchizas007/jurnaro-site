@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>リスクリワード比率の計算 — 必要な勝率もわかる</title>
+<meta name="description" content="リスクと狙える利益を比べ、そのトレードが損益ゼロになる勝率を確認します。">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/risk-reward/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/risk-reward/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/risk-reward/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/risk-reward/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/risk-reward/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/risk-reward/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/risk-reward/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/risk-reward/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/risk-reward/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/risk-reward/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/risk-reward/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/risk-reward/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/risk-reward/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/risk-reward/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/risk-reward/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/risk-reward/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/risk-reward/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/risk-reward/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/risk-reward/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/risk-reward/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/risk-reward/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/risk-reward/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="リスクリワード比率の計算 — 必要な勝率もわかる">
+<meta property="og:description" content="リスクと狙える利益を比べ、そのトレードが損益ゼロになる勝率を確認します。">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/ja/tools/risk-reward/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "リスクリワード計算ツール", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "リスクと狙える利益を比べ、そのトレードが損益ゼロになる勝率を確認します。", "inLanguage": "ja", "url": "https://sanchizas007.github.io/jurnaro-site/ja/tools/risk-reward/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/ja/"}, {"@type": "ListItem", "position": 2, "name": "計算ツール", "item": "https://sanchizas007.github.io/jurnaro-site/ja/tools/"}, {"@type": "ListItem", "position": 3, "name": "リスクリワード比率の計算", "item": "https://sanchizas007.github.io/jurnaro-site/ja/tools/risk-reward/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../ja/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../ja/">Jurnaro</a><a href="../../../ja/tools/" aria-current="page">計算ツール</a><a href="../../../ja/guide/">ガイド</a><a href="../../../ja/privacy/">プライバシー</a><a href="../../../ja/terms/">利用規約</a><a href="../../../ja/support/">サポート</a></div></header>
+<main><div class="wrap">
+
+<h1>リスクリワード計算ツール</h1>
+<p class="lede">エントリー、損切り、目標を入力します。リワード対リスクの比率と、その比率で損益ゼロになるために必要な勝率が表示されます。</p>
+
+<div class="stub" id="calc" data-kind="rr">
+  <div class="fields"><div><label for="in-entry">エントリー価格</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">ストップロス</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-target">ターゲット</label><div class="in"><input id="in-target" data-in="target" type="number" inputmode="decimal" step="any" value="1.0940"></div></div></div>
+  <div class="results"><div class="row"><span>リワード : リスク</span><span data-out="ratio">—</span></div><div class="row"><span>損益分岐の勝率</span><span data-out="be">—</span></div></div>
+</div>
+
+<h2>計算のしくみ</h2>
+<p>リワード : リスク = エントリーから目標までの距離 ÷ エントリーから損切りまでの距離。損益ゼロの勝率 = 1 ÷（1 + 比率）。1 : 2なら3回に1回、1 : 1なら2回に1回勝つ必要があります（手数料は除く）。</p>
+<div class="card"><p>これらの計算ツールは入力した数値で計算するだけです。投資助言ではありません。取引の前に、結果をブローカーの契約仕様と照らして確認してください。</p></div>
+
+<h2>数字は日記に残しましょう</h2>
+<p>Jurnaroは日記の中でこれを行います。残高とリスクを自動で入れ、注文する前にサイズを決め、結果をすべて保存するので、何が通用するのかが見えてきます。</p>
+<p><a href="../../../ja/">Jurnaroについて</a> · <a href="../../../ja/guide/">トレード日記に何を書くか</a></p>
+
+<h2>ほかの計算ツール</h2>
+<ul class="tools-list"><li><a href="../../../ja/tools/position-size/">ポジションサイズ計算ツール<small>損切りになったときの損失が口座の選んだ割合に収まるよう、何ロット・何株で取引すべきかを計算します。</small></a></li><li><a href="../../../ja/tools/pip-value/">pip価値計算ツール<small>取引するロット数について、1pipの価値を通貨ペアの決済通貨で求めます。</small></a></li><li><a href="../../../ja/tools/expectancy/">期待値計算ツール<small>勝率、平均利益、平均損失から、1回あたりの平均結果を金額とRで求めます。</small></a></li><li><a href="../../../ja/tools/drawdown-recovery/">ドローダウン回復計算ツール<small>損失を取り戻すのにどれだけ増やす必要があるか、そして深いドローダウンから抜け出すのがなぜ難しいかがわかります。</small></a></li><li><a href="../../../ja/tools/compounding/">複利計算ツール<small>毎月一定の利益を、積み立てありまたはなしで続けたとき、時間とともにどこまで増えるかを見ます。</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>最終更新: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/risk-reward/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/risk-reward/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/risk-reward/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/risk-reward/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/risk-reward/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/risk-reward/" hreflang="it" lang="it">Italiano</a> <a href="../../../ko/tools/risk-reward/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/risk-reward/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/risk-reward/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/risk-reward/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/risk-reward/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/risk-reward/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/risk-reward/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/risk-reward/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/risk-reward/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/risk-reward/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/risk-reward/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/risk-reward/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/risk-reward/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

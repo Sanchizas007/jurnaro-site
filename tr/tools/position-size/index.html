@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Pozisyon büyüklüğü hesaplayıcısı — bakiye, risk ve stoptan lot</title>
+<meta name="description" content="Bir stop olduğunda hesabının seçtiğin yüzdesini kaybetmen için kaç lot veya hisse işlem yapman gerektiğini hesapla.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/position-size/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/position-size/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/position-size/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/position-size/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/position-size/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/position-size/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/position-size/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/position-size/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/position-size/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/position-size/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/position-size/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/position-size/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Pozisyon büyüklüğü hesaplayıcısı — bakiye, risk ve stoptan lot">
+<meta property="og:description" content="Bir stop olduğunda hesabının seçtiğin yüzdesini kaybetmen için kaç lot veya hisse işlem yapman gerektiğini hesapla.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Pozisyon büyüklüğü hesaplayıcısı", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Bir stop olduğunda hesabının seçtiğin yüzdesini kaybetmen için kaç lot veya hisse işlem yapman gerektiğini hesapla.", "inLanguage": "tr", "url": "https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/tr/"}, {"@type": "ListItem", "position": 2, "name": "Hesaplayıcılar", "item": "https://sanchizas007.github.io/jurnaro-site/tr/tools/"}, {"@type": "ListItem", "position": 3, "name": "Pozisyon büyüklüğü hesaplayıcısı", "item": "https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../tr/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../tr/">Jurnaro</a><a href="../../../tr/tools/" aria-current="page">Hesaplayıcılar</a><a href="../../../tr/guide/">Rehber</a><a href="../../../tr/privacy/">Gizlilik</a><a href="../../../tr/terms/">Koşullar</a><a href="../../../tr/support/">Destek</a></div></header>
+<main><div class="wrap">
+
+<h1>Pozisyon büyüklüğü hesaplayıcısı</h1>
+<p class="lede">Bakiyeni, kaybetmeyi göze aldığın yüzdeyi, giriş ve stop seviyeni gir. Hesaplayıcı riskteki parayı ve kaybı o tutarla sınırlayan büyüklüğü verir.</p>
+
+<div class="stub" id="calc" data-kind="size">
+  <div class="fields"><div><label for="in-balance">Bakiye</label><div class="in"><input id="in-balance" data-in="balance" type="number" inputmode="decimal" step="any" value="10000"></div></div><div><label for="in-risk">İşlem başına risk</label><div class="in"><input id="in-risk" data-in="risk" type="number" inputmode="decimal" step="any" value="1"><span class=sfx>%</span></div></div><div><label for="in-entry">Giriş fiyatı</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">Stop loss</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-pv">Lot başına 1,0 hareketin değeri</label><div class="in"><input id="in-pv" data-in="pv" type="number" inputmode="decimal" step="any" value="100000"></div></div></div>
+  <div class="results"><div class="row"><span>Risk tutarı</span><span data-out="amount">—</span></div><div class="row"><span>Pozisyon büyüklüğü</span><span data-out="size">—</span></div></div>
+</div>
+
+<h2>Nasıl çalışır</h2>
+<p>Büyüklük = riskteki para ÷ (girişten stopa uzaklık × lot başına 1,0'lık hareketin değeri). Standart bir forex lotunda bu değer kote para biriminde 100.000'dir; bir hissede 1'dir. Sözleşme büyüklüğünü her zaman aracı kurumunda kontrol et.</p>
+<div class="card"><p>Bu hesaplayıcılar girdiğin sayılarla aritmetik yapar. Yatırım tavsiyesi değildir. İşlemden önce sonucu aracı kurumunun sözleşme özellikleriyle karşılaştır.</p></div>
+
+<h2>Sayıları bir günlükte tut</h2>
+<p>Jurnaro bunu günlüğün içinde yapar: bakiyeni ve riskini doldurur, işlemi açmadan önce büyüklüğünü belirler ve her sonucu saklar; böylece neyin işe yaradığını görürsün.</p>
+<p><a href="../../../tr/">Jurnaro hakkında</a> · <a href="../../../tr/guide/">İşlem günlüğüne neler yazılır</a></p>
+
+<h2>Diğer hesaplayıcılar</h2>
+<ul class="tools-list"><li><a href="../../../tr/tools/risk-reward/">Risk/ödül hesaplayıcısı<small>Riske attığınla kazanabileceğini karşılaştır ve işlemin başa baş olduğu kazanma oranını gör.</small></a></li><li><a href="../../../tr/tools/pip-value/">Pip değeri hesaplayıcısı<small>İşlem yaptığın lotlar için bir pipin paritenin kote para biriminde ne kadar ettiğini öğren.</small></a></li><li><a href="../../../tr/tools/expectancy/">Beklenti hesaplayıcısı<small>Kazanma oranını, ortalama kazancı ve ortalama kaybı işlem başına ortalama sonuca çevir; para ve R cinsinden.</small></a></li><li><a href="../../../tr/tools/drawdown-recovery/">Düşüşten toparlanma hesaplayıcısı<small>Bir kaybı telafi etmek için ne kadar kazanman gerektiğini ve derin düşüşlerden çıkmanın neden bu kadar zor olduğunu gör.</small></a></li><li><a href="../../../tr/tools/compounding/">Bileşik getiri hesaplayıcısı<small>Sabit bir aylık kazancın, para yatırarak veya yatırmadan zamanla neye dönüştüğünü gör.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Son güncelleme: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/position-size/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/position-size/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/position-size/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/position-size/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/position-size/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/position-size/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/position-size/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/position-size/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/position-size/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/position-size/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/position-size/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/position-size/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/position-size/" hreflang="pl" lang="pl">Polski</a> <a href="../../../uk/tools/position-size/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/position-size/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/position-size/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/position-size/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/position-size/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/position-size/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Máy tính kỳ vọng giao dịch — hệ số lợi nhuận và lợi thế</title>
+<meta name="description" content="Biến tỷ lệ thắng, mức thắng trung bình và mức thua trung bình thành kết quả trung bình mỗi lệnh, tính bằng tiền và bằng R.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/expectancy/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/expectancy/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/expectancy/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/expectancy/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/expectancy/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/expectancy/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/expectancy/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/expectancy/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/expectancy/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/expectancy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/expectancy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/expectancy/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/expectancy/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/expectancy/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/expectancy/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/expectancy/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/expectancy/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/expectancy/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/expectancy/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/expectancy/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/expectancy/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/expectancy/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Máy tính kỳ vọng giao dịch — hệ số lợi nhuận và lợi thế">
+<meta property="og:description" content="Biến tỷ lệ thắng, mức thắng trung bình và mức thua trung bình thành kết quả trung bình mỗi lệnh, tính bằng tiền và bằng R.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/vi/tools/expectancy/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Máy tính kỳ vọng", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Biến tỷ lệ thắng, mức thắng trung bình và mức thua trung bình thành kết quả trung bình mỗi lệnh, tính bằng tiền và bằng R.", "inLanguage": "vi", "url": "https://sanchizas007.github.io/jurnaro-site/vi/tools/expectancy/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/vi/"}, {"@type": "ListItem", "position": 2, "name": "Máy tính", "item": "https://sanchizas007.github.io/jurnaro-site/vi/tools/"}, {"@type": "ListItem", "position": 3, "name": "Máy tính kỳ vọng giao dịch", "item": "https://sanchizas007.github.io/jurnaro-site/vi/tools/expectancy/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../vi/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../vi/">Jurnaro</a><a href="../../../vi/tools/" aria-current="page">Máy tính</a><a href="../../../vi/guide/">Hướng dẫn</a><a href="../../../vi/privacy/">Quyền riêng tư</a><a href="../../../vi/terms/">Điều khoản</a><a href="../../../vi/support/">Hỗ trợ</a></div></header>
+<main><div class="wrap">
+
+<h1>Máy tính kỳ vọng</h1>
+<p class="lede">Nhập tỷ lệ thắng cùng mức thắng và thua trung bình. Máy tính cho biết một lệnh trị giá bao nhiêu trung bình, hệ số lợi nhuận và tỷ lệ thắng hòa vốn.</p>
+
+<div class="stub" id="calc" data-kind="expectancy">
+  <div class="fields"><div><label for="in-win">Tỷ lệ thắng</label><div class="in"><input id="in-win" data-in="win" type="number" inputmode="decimal" step="any" value="45"><span class=sfx>%</span></div></div><div><label for="in-avgwin">Lãi trung bình</label><div class="in"><input id="in-avgwin" data-in="avgwin" type="number" inputmode="decimal" step="any" value="150"></div></div><div><label for="in-avgloss">Lỗ trung bình</label><div class="in"><input id="in-avgloss" data-in="avgloss" type="number" inputmode="decimal" step="any" value="100"></div></div></div>
+  <div class="results"><div class="row"><span>Kỳ vọng mỗi lệnh</span><span data-out="exp">—</span></div><div class="row"><span>Hệ số lợi nhuận</span><span data-out="pf">—</span></div><div class="row"><span>Tỷ lệ thắng hòa vốn</span><span data-out="be">—</span></div></div>
+</div>
+
+<h2>Cách hoạt động</h2>
+<p>Kỳ vọng = tỷ lệ thắng × mức thắng trung bình − tỷ lệ thua × mức thua trung bình. Tính theo R thì chia cho mức thua trung bình. Hệ số lợi nhuận = tổng lãi ÷ tổng lỗ. Kỳ vọng dương qua nhiều lệnh chính là định nghĩa của lợi thế; vài lệnh thì không chứng minh được gì.</p>
+<div class="card"><p>Các máy tính này chỉ làm phép tính trên số bạn nhập. Đây không phải tư vấn đầu tư. Hãy đối chiếu kết quả với thông số hợp đồng ở sàn của bạn trước khi giao dịch.</p></div>
+
+<h2>Giữ các con số trong một cuốn nhật ký</h2>
+<p>Jurnaro làm điều này ngay trong nhật ký: điền số dư và mức rủi ro của bạn, tính khối lượng lệnh trước khi bạn mở, và lưu mọi kết quả để bạn thấy điều gì hiệu quả.</p>
+<p><a href="../../../vi/">Giới thiệu Jurnaro</a> · <a href="../../../vi/guide/">Nên ghi gì trong nhật ký giao dịch</a></p>
+
+<h2>Máy tính khác</h2>
+<ul class="tools-list"><li><a href="../../../vi/tools/position-size/">Máy tính khối lượng vị thế<small>Tính xem nên giao dịch bao nhiêu lot hoặc cổ phiếu để khi chạm cắt lỗ, bạn mất đúng phần trăm tài khoản đã chọn.</small></a></li><li><a href="../../../vi/tools/risk-reward/">Máy tính rủi ro/lợi nhuận<small>So sánh điều bạn rủi ro với điều bạn có thể thắng, và xem tỷ lệ thắng để lệnh hòa vốn.</small></a></li><li><a href="../../../vi/tools/pip-value/">Máy tính giá trị pip<small>Biết một pip có giá trị bao nhiêu với số lot bạn giao dịch, theo đồng tiền định giá của cặp tiền.</small></a></li><li><a href="../../../vi/tools/drawdown-recovery/">Máy tính hồi phục sau sụt giảm<small>Xem cần lãi bao nhiêu để gỡ một khoản lỗ, và vì sao những đợt sụt giảm sâu rất khó vượt qua.</small></a></li><li><a href="../../../vi/tools/compounding/">Máy tính lãi kép<small>Xem mức lãi hằng tháng đều đặn, có hoặc không nạp thêm, tăng lên bao nhiêu theo thời gian.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Cập nhật lần cuối: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/expectancy/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/expectancy/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/expectancy/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/expectancy/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/expectancy/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/expectancy/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/expectancy/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/expectancy/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/expectancy/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/expectancy/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/expectancy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/expectancy/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/expectancy/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/expectancy/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/expectancy/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/expectancy/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/expectancy/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/expectancy/" hreflang="th" lang="th">ไทย</a> <a href="../../../hi/tools/expectancy/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

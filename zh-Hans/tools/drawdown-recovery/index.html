@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>回撤恢复计算器 — 回本所需的收益</title>
+<meta name="description" content="看看要把亏损赚回来需要多少收益，以及为什么深度回撤那么难爬出来。">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/drawdown-recovery/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/drawdown-recovery/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="回撤恢复计算器 — 回本所需的收益">
+<meta property="og:description" content="看看要把亏损赚回来需要多少收益，以及为什么深度回撤那么难爬出来。">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/drawdown-recovery/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "回撤恢复计算器", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "看看要把亏损赚回来需要多少收益，以及为什么深度回撤那么难爬出来。", "inLanguage": "zh-Hans", "url": "https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/drawdown-recovery/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/zh-Hans/"}, {"@type": "ListItem", "position": 2, "name": "计算器", "item": "https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/"}, {"@type": "ListItem", "position": 3, "name": "回撤恢复计算器", "item": "https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/drawdown-recovery/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../zh-Hans/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../zh-Hans/">Jurnaro</a><a href="../../../zh-Hans/tools/" aria-current="page">计算器</a><a href="../../../zh-Hans/guide/">指南</a><a href="../../../zh-Hans/privacy/">隐私</a><a href="../../../zh-Hans/terms/">条款</a><a href="../../../zh-Hans/support/">支持</a></div></header>
+<main><div class="wrap">
+
+<h1>回撤恢复计算器</h1>
+<p class="lede">输入账户从峰值下跌了多少。计算器会给出回到峰值所需的收益，表格列出了常见水平。</p>
+
+<div class="stub" id="calc" data-kind="drawdown">
+  <div class="fields"><div><label for="in-dd">回撤</label><div class="in"><input id="in-dd" data-in="dd" type="number" inputmode="decimal" step="any" value="20"><span class=sfx>%</span></div></div></div>
+  <div class="results"><div class="row"><span>回本所需的盈利</span><span data-out="gain">—</span></div></div>
+</div>
+<table><thead><tr><th>回撤</th><th>回本所需的盈利</th></tr></thead><tbody><tr><td>5%</td><td>5.3%</td></tr><tr><td>10%</td><td>11.1%</td></tr><tr><td>20%</td><td>25.0%</td></tr><tr><td>30%</td><td>42.9%</td></tr><tr><td>40%</td><td>66.7%</td></tr><tr><td>50%</td><td>100.0%</td></tr><tr><td>60%</td><td>150.0%</td></tr><tr><td>70%</td><td>233.3%</td></tr><tr><td>80%</td><td>400.0%</td></tr><tr><td>90%</td><td>900.0%</td></tr></tbody></table>
+<h2>计算方法</h2>
+<p>所需收益 = 回撤 ÷（100 − 回撤）。亏损 10% 需要涨 11.1% 才能回本；50% 需要 100%；80% 需要 400%。这就是为什么控制亏损的大小比盈利的大小更重要。</p>
+<div class="card"><p>这些计算器只是对你输入的数字做运算，不是投资建议。交易之前，请对照经纪商的合约规格核对结果。</p></div>
+
+<h2>把数字记进日志</h2>
+<p>Jurnaro 在日志里替你完成这些：自动填入你的余额和风险，在你下单前算好仓位，并保存每一个结果，让你看清什么有效。</p>
+<p><a href="../../../zh-Hans/">关于 Jurnaro</a> · <a href="../../../zh-Hans/guide/">交易日志里该记什么</a></p>
+
+<h2>更多计算器</h2>
+<ul class="tools-list"><li><a href="../../../zh-Hans/tools/position-size/">仓位大小计算器<small>算出该交易多少手或多少股，才能让触发止损时的亏损正好是你选定的账户比例。</small></a></li><li><a href="../../../zh-Hans/tools/risk-reward/">盈亏比计算器<small>比较你承担的风险与可能赚到的利润，并查看这笔交易保本所需的胜率。</small></a></li><li><a href="../../../zh-Hans/tools/pip-value/">点值计算器<small>查看你交易的手数下，一点值多少，以货币对的报价货币计。</small></a></li><li><a href="../../../zh-Hans/tools/expectancy/">期望值计算器<small>把胜率、平均盈利和平均亏损换算成每笔交易的平均结果，以金额和 R 表示。</small></a></li><li><a href="../../../zh-Hans/tools/compounding/">复利计算器<small>看看每月稳定的收益，在有无追加投入的情况下，随时间会增长到多少。</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>最后更新: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/drawdown-recovery/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/drawdown-recovery/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/drawdown-recovery/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/drawdown-recovery/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/drawdown-recovery/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/drawdown-recovery/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/drawdown-recovery/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/drawdown-recovery/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/drawdown-recovery/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hant/tools/drawdown-recovery/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/drawdown-recovery/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/drawdown-recovery/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/drawdown-recovery/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/drawdown-recovery/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/drawdown-recovery/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/drawdown-recovery/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/drawdown-recovery/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/drawdown-recovery/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/drawdown-recovery/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

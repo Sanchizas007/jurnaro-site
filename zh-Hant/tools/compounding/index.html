@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>交易複利計算機 — 按月成長</title>
+<meta name="description" content="看看每月穩定的報酬，在有無追加投入的情況下，隨時間會成長到多少。">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/compounding/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/compounding/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/compounding/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/compounding/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/compounding/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/compounding/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/compounding/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/compounding/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/compounding/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/compounding/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/compounding/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/compounding/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/compounding/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/compounding/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/compounding/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/compounding/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/compounding/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/compounding/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/compounding/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/compounding/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/compounding/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/compounding/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="交易複利計算機 — 按月成長">
+<meta property="og:description" content="看看每月穩定的報酬，在有無追加投入的情況下，隨時間會成長到多少。">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/compounding/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "複利計算機", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "看看每月穩定的報酬，在有無追加投入的情況下，隨時間會成長到多少。", "inLanguage": "zh-Hant", "url": "https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/compounding/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/zh-Hant/"}, {"@type": "ListItem", "position": 2, "name": "計算機", "item": "https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/"}, {"@type": "ListItem", "position": 3, "name": "交易複利計算機", "item": "https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/compounding/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../zh-Hant/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../zh-Hant/">Jurnaro</a><a href="../../../zh-Hant/tools/" aria-current="page">計算機</a><a href="../../../zh-Hant/guide/">指南</a><a href="../../../zh-Hant/privacy/">隱私權</a><a href="../../../zh-Hant/terms/">條款</a><a href="../../../zh-Hant/support/">支援</a></div></header>
+<main><div class="wrap">
+
+<h1>複利計算機</h1>
+<p class="lede">輸入起始餘額、每月報酬率、月數和選填的每月追加資金。計算機會給出期末餘額和利潤。</p>
+
+<div class="stub" id="calc" data-kind="compound">
+  <div class="fields"><div><label for="in-start">初始餘額</label><div class="in"><input id="in-start" data-in="start" type="number" inputmode="decimal" step="any" value="10000"></div></div><div><label for="in-rate">每月獲利</label><div class="in"><input id="in-rate" data-in="rate" type="number" inputmode="decimal" step="any" value="3"><span class=sfx>%</span></div></div><div><label for="in-months">個月</label><div class="in"><input id="in-months" data-in="months" type="number" inputmode="decimal" step="any" value="12"></div></div><div><label for="in-deposit">每月存入</label><div class="in"><input id="in-deposit" data-in="deposit" type="number" inputmode="decimal" step="any" value="0"></div></div></div>
+  <div class="results"><div class="row"><span>期末餘額</span><span data-out="end">—</span></div><div class="row"><span>獲利</span><span data-out="profit">—</span></div></div>
+</div>
+
+<h2>計算方式</h2>
+<p>每個月餘額按報酬率成長，然後加上追加資金。每月穩定 3% 極為少見也很難堅持；這個計算機是想說明節奏與時間有多重要，並不承諾任何結果。</p>
+<div class="card"><p>這些計算機只是對你輸入的數字做運算，不是投資建議。交易之前，請對照券商的合約規格核對結果。</p></div>
+
+<h2>把數字記進日誌</h2>
+<p>Jurnaro 在日誌裡替你完成這些：自動填入你的餘額和風險，在你下單前算好部位，並保存每一個結果，讓你看清什麼有效。</p>
+<p><a href="../../../zh-Hant/">關於 Jurnaro</a> · <a href="../../../zh-Hant/guide/">交易日誌裡該記什麼</a></p>
+
+<h2>更多計算機</h2>
+<ul class="tools-list"><li><a href="../../../zh-Hant/tools/position-size/">部位大小計算機<small>算出該交易多少手或多少股，才能讓觸發停損時的虧損正好是你選定的帳戶比例。</small></a></li><li><a href="../../../zh-Hant/tools/risk-reward/">風險報酬比計算機<small>比較你承擔的風險與可能賺到的利潤，並查看這筆交易損益兩平所需的勝率。</small></a></li><li><a href="../../../zh-Hant/tools/pip-value/">點值計算機<small>查看你交易的手數下，一點值多少，以貨幣對的報價貨幣計。</small></a></li><li><a href="../../../zh-Hant/tools/expectancy/">期望值計算機<small>把勝率、平均獲利和平均虧損換算成每筆交易的平均結果，以金額和 R 表示。</small></a></li><li><a href="../../../zh-Hant/tools/drawdown-recovery/">回撤恢復計算機<small>看看要把虧損賺回來需要多少報酬，以及為什麼深度回撤那麼難爬出來。</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>最後更新: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/compounding/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/compounding/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/compounding/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/compounding/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/compounding/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/compounding/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/compounding/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/compounding/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/compounding/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/compounding/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../nl/tools/compounding/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/compounding/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/compounding/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/compounding/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/compounding/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/compounding/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/compounding/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/compounding/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/compounding/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

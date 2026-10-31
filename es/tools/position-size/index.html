@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Calculadora de tamaño de posición — lotes según saldo, riesgo y stop</title>
+<meta name="description" content="Calcula cuántos lotes o acciones operar para que un stop te cueste el porcentaje de tu cuenta que elegiste.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/position-size/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/position-size/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/position-size/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/position-size/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/position-size/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/position-size/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/position-size/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/position-size/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/position-size/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/position-size/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/position-size/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/position-size/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Calculadora de tamaño de posición — lotes según saldo, riesgo y stop">
+<meta property="og:description" content="Calcula cuántos lotes o acciones operar para que un stop te cueste el porcentaje de tu cuenta que elegiste.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de tamaño de posición", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Calcula cuántos lotes o acciones operar para que un stop te cueste el porcentaje de tu cuenta que elegiste.", "inLanguage": "es", "url": "https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/es/"}, {"@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://sanchizas007.github.io/jurnaro-site/es/tools/"}, {"@type": "ListItem", "position": 3, "name": "Calculadora de tamaño de posición", "item": "https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../es/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../es/">Jurnaro</a><a href="../../../es/tools/" aria-current="page">Calculadoras</a><a href="../../../es/guide/">Guía</a><a href="../../../es/privacy/">Privacidad</a><a href="../../../es/terms/">Términos</a><a href="../../../es/support/">Soporte</a></div></header>
+<main><div class="wrap">
+
+<h1>Calculadora de tamaño de posición</h1>
+<p class="lede">Escribe tu saldo, el porcentaje que estás dispuesto a perder y dónde entras y dónde está tu stop. La calculadora da el dinero en riesgo y el tamaño que limita la pérdida a esa cantidad.</p>
+
+<div class="stub" id="calc" data-kind="size">
+  <div class="fields"><div><label for="in-balance">Saldo</label><div class="in"><input id="in-balance" data-in="balance" type="number" inputmode="decimal" step="any" value="10000"></div></div><div><label for="in-risk">Riesgo por operación</label><div class="in"><input id="in-risk" data-in="risk" type="number" inputmode="decimal" step="any" value="1"><span class=sfx>%</span></div></div><div><label for="in-entry">Precio de entrada</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">Stop loss</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-pv">Valor de 1,0 de movimiento por lote</label><div class="in"><input id="in-pv" data-in="pv" type="number" inputmode="decimal" step="any" value="100000"></div></div></div>
+  <div class="results"><div class="row"><span>Importe en riesgo</span><span data-out="amount">—</span></div><div class="row"><span>Tamaño de posición</span><span data-out="size">—</span></div></div>
+</div>
+
+<h2>Cómo funciona</h2>
+<p>Tamaño = dinero en riesgo ÷ (distancia de la entrada al stop × valor de un movimiento de 1,0 por lote). En un lote estándar de forex ese valor es 100.000 en la divisa de cotización; en una acción, 1. Comprueba siempre el tamaño del contrato en tu bróker.</p>
+<div class="card"><p>Estas calculadoras hacen aritmética con los números que escribes. No son asesoramiento de inversión. Comprueba el resultado con las especificaciones del contrato de tu bróker antes de operar.</p></div>
+
+<h2>Guarda los números en un diario</h2>
+<p>Jurnaro lo hace dentro del diario: rellena tu saldo y tu riesgo, dimensiona la operación antes de abrirla y guarda cada resultado para que veas qué funciona.</p>
+<p><a href="../../../es/">Sobre Jurnaro</a> · <a href="../../../es/guide/">Qué anotar en un diario de trading</a></p>
+
+<h2>Más calculadoras</h2>
+<ul class="tools-list"><li><a href="../../../es/tools/risk-reward/">Calculadora de riesgo/beneficio<small>Compara lo que arriesgas con lo que puedes ganar y mira la tasa de acierto con la que la operación queda en tablas.</small></a></li><li><a href="../../../es/tools/pip-value/">Calculadora del valor del pip<small>Averigua cuánto vale un pip para los lotes que operas, en la divisa de cotización del par.</small></a></li><li><a href="../../../es/tools/expectancy/">Calculadora de esperanza matemática<small>Convierte tu tasa de acierto, tu ganancia media y tu pérdida media en el resultado medio por operación, en dinero y en R.</small></a></li><li><a href="../../../es/tools/drawdown-recovery/">Calculadora de recuperación de drawdown<small>Mira cuánto debes ganar para recuperar una pérdida y por qué los drawdowns profundos cuesta tanto remontarlos.</small></a></li><li><a href="../../../es/tools/compounding/">Calculadora de interés compuesto<small>Mira en qué se convierte con el tiempo una ganancia mensual constante, con o sin aportaciones.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Última actualización: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/position-size/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/position-size/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/position-size/" hreflang="fr" lang="fr">Français</a> <a href="../../../pt-BR/tools/position-size/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/position-size/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/position-size/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/position-size/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/position-size/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/position-size/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/position-size/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/position-size/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/position-size/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/position-size/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/position-size/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/position-size/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/position-size/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/position-size/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/position-size/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/position-size/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

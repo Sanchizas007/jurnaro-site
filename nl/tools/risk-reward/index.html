@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Risico/rendement-calculator — en het winstpercentage dat je nodig hebt</title>
+<meta name="description" content="Vergelijk wat je riskeert met wat je kunt winnen en zie het winstpercentage waarbij de trade quitte speelt.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/risk-reward/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/risk-reward/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/risk-reward/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/risk-reward/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/risk-reward/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/risk-reward/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/risk-reward/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/risk-reward/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/risk-reward/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/risk-reward/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/risk-reward/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/risk-reward/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/risk-reward/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/risk-reward/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/risk-reward/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/risk-reward/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/risk-reward/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/risk-reward/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/risk-reward/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/risk-reward/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/risk-reward/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/risk-reward/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Risico/rendement-calculator — en het winstpercentage dat je nodig hebt">
+<meta property="og:description" content="Vergelijk wat je riskeert met wat je kunt winnen en zie het winstpercentage waarbij de trade quitte speelt.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/nl/tools/risk-reward/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Risico/rendement-calculator", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Vergelijk wat je riskeert met wat je kunt winnen en zie het winstpercentage waarbij de trade quitte speelt.", "inLanguage": "nl", "url": "https://sanchizas007.github.io/jurnaro-site/nl/tools/risk-reward/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/nl/"}, {"@type": "ListItem", "position": 2, "name": "Rekenmachines", "item": "https://sanchizas007.github.io/jurnaro-site/nl/tools/"}, {"@type": "ListItem", "position": 3, "name": "Risico/rendement-calculator", "item": "https://sanchizas007.github.io/jurnaro-site/nl/tools/risk-reward/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../nl/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../nl/">Jurnaro</a><a href="../../../nl/tools/" aria-current="page">Rekenmachines</a><a href="../../../nl/guide/">Gids</a><a href="../../../nl/privacy/">Privacy</a><a href="../../../nl/terms/">Voorwaarden</a><a href="../../../nl/support/">Support</a></div></header>
+<main><div class="wrap">
+
+<h1>Risico/rendement-calculator</h1>
+<p class="lede">Voer de instap, de stop en het doel in. De rekenmachine geeft de verhouding rendement tot risico en het winstpercentage dat je minimaal nodig hebt om bij die verhouding quitte te spelen.</p>
+
+<div class="stub" id="calc" data-kind="rr">
+  <div class="fields"><div><label for="in-entry">Instapprijs</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">Stop-loss</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-target">Doel</label><div class="in"><input id="in-target" data-in="target" type="number" inputmode="decimal" step="any" value="1.0940"></div></div></div>
+  <div class="results"><div class="row"><span>Opbrengst : risico</span><span data-out="ratio">—</span></div><div class="row"><span>Break-even-winstpercentage</span><span data-out="be">—</span></div></div>
+</div>
+
+<h2>Hoe het werkt</h2>
+<p>Rendement : risico = afstand van instap tot doel ÷ afstand van instap tot stop. Break-even-winstpercentage = 1 ÷ (1 + verhouding). Bij 1 : 2 moet je een op de drie trades winnen; bij 1 : 1 een op de twee, vóór kosten.</p>
+<div class="card"><p>Deze rekenmachines doen rekenwerk met de getallen die je invoert. Het is geen beleggingsadvies. Controleer het resultaat met de contractspecificaties van je broker voordat je handelt.</p></div>
+
+<h2>Bewaar de cijfers in een dagboek</h2>
+<p>Jurnaro doet dit in het dagboek zelf: het vult je saldo en je risico in, bepaalt de grootte van de trade voordat je hem plaatst en bewaart elk resultaat, zodat je ziet wat werkt.</p>
+<p><a href="../../../nl/">Over Jurnaro</a> · <a href="../../../nl/guide/">Wat je opschrijft in een tradingdagboek</a></p>
+
+<h2>Meer rekenmachines</h2>
+<ul class="tools-list"><li><a href="../../../nl/tools/position-size/">Positiegroottecalculator<small>Bereken hoeveel lots of aandelen je moet handelen zodat een stop-out het gekozen percentage van je rekening kost.</small></a></li><li><a href="../../../nl/tools/pip-value/">Pipwaarde-calculator<small>Ontdek wat één pip waard is voor de lots die je handelt, in de koersvaluta van het paar.</small></a></li><li><a href="../../../nl/tools/expectancy/">Verwachtingswaarde-calculator<small>Maak van je winstpercentage, gemiddelde winst en gemiddeld verlies het gemiddelde resultaat per trade, in geld en in R.</small></a></li><li><a href="../../../nl/tools/drawdown-recovery/">Drawdownherstel-calculator<small>Zie hoeveel je moet winnen om een verlies goed te maken en waarom diepe drawdowns zo moeilijk te herstellen zijn.</small></a></li><li><a href="../../../nl/tools/compounding/">Samengestelde-rente-calculator<small>Zie waartoe een constante maandwinst, met of zonder stortingen, in de loop van de tijd groeit.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Laatst bijgewerkt: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/risk-reward/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/risk-reward/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/risk-reward/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/risk-reward/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/risk-reward/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/risk-reward/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/risk-reward/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/risk-reward/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/risk-reward/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/risk-reward/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/risk-reward/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../pl/tools/risk-reward/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/risk-reward/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/risk-reward/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/risk-reward/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/risk-reward/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/risk-reward/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/risk-reward/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/risk-reward/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

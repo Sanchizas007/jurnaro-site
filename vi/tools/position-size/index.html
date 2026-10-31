@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Máy tính khối lượng vị thế — lot theo số dư, rủi ro và mức cắt lỗ</title>
+<meta name="description" content="Tính xem nên giao dịch bao nhiêu lot hoặc cổ phiếu để khi chạm cắt lỗ, bạn mất đúng phần trăm tài khoản đã chọn.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/position-size/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/position-size/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/position-size/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/position-size/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/position-size/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/position-size/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/position-size/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/position-size/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/position-size/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/position-size/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/position-size/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/position-size/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Máy tính khối lượng vị thế — lot theo số dư, rủi ro và mức cắt lỗ">
+<meta property="og:description" content="Tính xem nên giao dịch bao nhiêu lot hoặc cổ phiếu để khi chạm cắt lỗ, bạn mất đúng phần trăm tài khoản đã chọn.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Máy tính khối lượng vị thế", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Tính xem nên giao dịch bao nhiêu lot hoặc cổ phiếu để khi chạm cắt lỗ, bạn mất đúng phần trăm tài khoản đã chọn.", "inLanguage": "vi", "url": "https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/vi/"}, {"@type": "ListItem", "position": 2, "name": "Máy tính", "item": "https://sanchizas007.github.io/jurnaro-site/vi/tools/"}, {"@type": "ListItem", "position": 3, "name": "Máy tính khối lượng vị thế", "item": "https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../vi/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../vi/">Jurnaro</a><a href="../../../vi/tools/" aria-current="page">Máy tính</a><a href="../../../vi/guide/">Hướng dẫn</a><a href="../../../vi/privacy/">Quyền riêng tư</a><a href="../../../vi/terms/">Điều khoản</a><a href="../../../vi/support/">Hỗ trợ</a></div></header>
+<main><div class="wrap">
+
+<h1>Máy tính khối lượng vị thế</h1>
+<p class="lede">Nhập số dư, phần trăm bạn chấp nhận mất, giá vào lệnh và mức cắt lỗ. Máy tính cho biết số tiền rủi ro và khối lượng giữ khoản lỗ ở mức đó.</p>
+
+<div class="stub" id="calc" data-kind="size">
+  <div class="fields"><div><label for="in-balance">Số dư</label><div class="in"><input id="in-balance" data-in="balance" type="number" inputmode="decimal" step="any" value="10000"></div></div><div><label for="in-risk">Rủi ro mỗi lệnh</label><div class="in"><input id="in-risk" data-in="risk" type="number" inputmode="decimal" step="any" value="1"><span class=sfx>%</span></div></div><div><label for="in-entry">Giá vào</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">Cắt lỗ</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-pv">Giá trị của biến động 1,0 mỗi lot</label><div class="in"><input id="in-pv" data-in="pv" type="number" inputmode="decimal" step="any" value="100000"></div></div></div>
+  <div class="results"><div class="row"><span>Số tiền rủi ro</span><span data-out="amount">—</span></div><div class="row"><span>Khối lượng vị thế</span><span data-out="size">—</span></div></div>
+</div>
+
+<h2>Cách hoạt động</h2>
+<p>Khối lượng = số tiền rủi ro ÷ (khoảng cách từ giá vào đến cắt lỗ × giá trị của biến động 1,0 trên mỗi lot). Với lot chuẩn forex, giá trị này là 100.000 theo đồng tiền định giá; với một cổ phiếu là 1. Luôn kiểm tra kích thước hợp đồng ở sàn của bạn.</p>
+<div class="card"><p>Các máy tính này chỉ làm phép tính trên số bạn nhập. Đây không phải tư vấn đầu tư. Hãy đối chiếu kết quả với thông số hợp đồng ở sàn của bạn trước khi giao dịch.</p></div>
+
+<h2>Giữ các con số trong một cuốn nhật ký</h2>
+<p>Jurnaro làm điều này ngay trong nhật ký: điền số dư và mức rủi ro của bạn, tính khối lượng lệnh trước khi bạn mở, và lưu mọi kết quả để bạn thấy điều gì hiệu quả.</p>
+<p><a href="../../../vi/">Giới thiệu Jurnaro</a> · <a href="../../../vi/guide/">Nên ghi gì trong nhật ký giao dịch</a></p>
+
+<h2>Máy tính khác</h2>
+<ul class="tools-list"><li><a href="../../../vi/tools/risk-reward/">Máy tính rủi ro/lợi nhuận<small>So sánh điều bạn rủi ro với điều bạn có thể thắng, và xem tỷ lệ thắng để lệnh hòa vốn.</small></a></li><li><a href="../../../vi/tools/pip-value/">Máy tính giá trị pip<small>Biết một pip có giá trị bao nhiêu với số lot bạn giao dịch, theo đồng tiền định giá của cặp tiền.</small></a></li><li><a href="../../../vi/tools/expectancy/">Máy tính kỳ vọng<small>Biến tỷ lệ thắng, mức thắng trung bình và mức thua trung bình thành kết quả trung bình mỗi lệnh, tính bằng tiền và bằng R.</small></a></li><li><a href="../../../vi/tools/drawdown-recovery/">Máy tính hồi phục sau sụt giảm<small>Xem cần lãi bao nhiêu để gỡ một khoản lỗ, và vì sao những đợt sụt giảm sâu rất khó vượt qua.</small></a></li><li><a href="../../../vi/tools/compounding/">Máy tính lãi kép<small>Xem mức lãi hằng tháng đều đặn, có hoặc không nạp thêm, tăng lên bao nhiêu theo thời gian.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Cập nhật lần cuối: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/position-size/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/position-size/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/position-size/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/position-size/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/position-size/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/position-size/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/position-size/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/position-size/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/position-size/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/position-size/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/position-size/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/position-size/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/position-size/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/position-size/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/position-size/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/position-size/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/position-size/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/position-size/" hreflang="th" lang="th">ไทย</a> <a href="../../../hi/tools/position-size/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

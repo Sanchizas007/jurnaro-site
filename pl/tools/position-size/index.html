@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Kalkulator wielkości pozycji — loty z salda, ryzyka i stopa</title>
+<meta name="description" content="Oblicz, ile lotów lub akcji handlować, aby wybicie stopa kosztowało wybrany procent konta.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/position-size/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/position-size/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/position-size/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/position-size/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/position-size/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/position-size/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/position-size/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/position-size/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/position-size/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/position-size/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/position-size/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/position-size/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Kalkulator wielkości pozycji — loty z salda, ryzyka i stopa">
+<meta property="og:description" content="Oblicz, ile lotów lub akcji handlować, aby wybicie stopa kosztowało wybrany procent konta.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Kalkulator wielkości pozycji", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Oblicz, ile lotów lub akcji handlować, aby wybicie stopa kosztowało wybrany procent konta.", "inLanguage": "pl", "url": "https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/pl/"}, {"@type": "ListItem", "position": 2, "name": "Kalkulatory", "item": "https://sanchizas007.github.io/jurnaro-site/pl/tools/"}, {"@type": "ListItem", "position": 3, "name": "Kalkulator wielkości pozycji", "item": "https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../pl/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../pl/">Jurnaro</a><a href="../../../pl/tools/" aria-current="page">Kalkulatory</a><a href="../../../pl/guide/">Poradnik</a><a href="../../../pl/privacy/">Prywatność</a><a href="../../../pl/terms/">Warunki</a><a href="../../../pl/support/">Pomoc</a></div></header>
+<main><div class="wrap">
+
+<h1>Kalkulator wielkości pozycji</h1>
+<p class="lede">Wpisz saldo, procent, który chcesz stracić, oraz wejście i stop. Kalkulator poda kwotę ryzyka i wielkość, która ogranicza stratę do tej kwoty.</p>
+
+<div class="stub" id="calc" data-kind="size">
+  <div class="fields"><div><label for="in-balance">Saldo</label><div class="in"><input id="in-balance" data-in="balance" type="number" inputmode="decimal" step="any" value="10000"></div></div><div><label for="in-risk">Ryzyko na transakcję</label><div class="in"><input id="in-risk" data-in="risk" type="number" inputmode="decimal" step="any" value="1"><span class=sfx>%</span></div></div><div><label for="in-entry">Cena wejścia</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">Stop loss</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-pv">Wartość ruchu 1,0 na lot</label><div class="in"><input id="in-pv" data-in="pv" type="number" inputmode="decimal" step="any" value="100000"></div></div></div>
+  <div class="results"><div class="row"><span>Kwota ryzyka</span><span data-out="amount">—</span></div><div class="row"><span>Wielkość pozycji</span><span data-out="size">—</span></div></div>
+</div>
+
+<h2>Jak to działa</h2>
+<p>Wielkość = kwota ryzyka ÷ (odległość od wejścia do stopa × wartość ruchu o 1,0 na lot). Dla standardowego lota forex ta wartość to 100 000 w walucie kwotowanej; dla jednej akcji to 1. Zawsze sprawdzaj wielkość kontraktu u brokera.</p>
+<div class="card"><p>Te kalkulatory wykonują działania na liczbach, które wpisujesz. Nie są poradą inwestycyjną. Przed transakcją sprawdź wynik ze specyfikacją kontraktu u swojego brokera.</p></div>
+
+<h2>Trzymaj liczby w dzienniku</h2>
+<p>Jurnaro robi to w samym dzienniku: wstawia twoje saldo i ryzyko, ustala wielkość transakcji, zanim ją otworzysz, i zachowuje każdy wynik, żebyś widział, co działa.</p>
+<p><a href="../../../pl/">O Jurnaro</a> · <a href="../../../pl/guide/">Co zapisywać w dzienniku tradera</a></p>
+
+<h2>Więcej kalkulatorów</h2>
+<ul class="tools-list"><li><a href="../../../pl/tools/risk-reward/">Kalkulator zysku do ryzyka<small>Porównaj to, co ryzykujesz, z tym, co możesz zyskać, i zobacz skuteczność, przy której transakcja wychodzi na zero.</small></a></li><li><a href="../../../pl/tools/pip-value/">Kalkulator wartości pipsa<small>Sprawdź, ile wart jest jeden pips dla lotów, którymi handlujesz, w walucie kwotowanej pary.</small></a></li><li><a href="../../../pl/tools/expectancy/">Kalkulator oczekiwanej wartości<small>Zamień skuteczność, średni zysk i średnią stratę w średni wynik na transakcję, w pieniądzach i w R.</small></a></li><li><a href="../../../pl/tools/drawdown-recovery/">Kalkulator odrabiania obsunięcia<small>Zobacz, ile musisz zarobić, żeby odrobić stratę, i dlaczego głębokie obsunięcia tak trudno odrobić.</small></a></li><li><a href="../../../pl/tools/compounding/">Kalkulator procentu składanego<small>Zobacz, do czego z czasem urośnie stały miesięczny zysk, z wpłatami lub bez.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Ostatnia aktualizacja: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/position-size/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/position-size/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/position-size/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/position-size/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/position-size/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/position-size/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/position-size/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/position-size/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/position-size/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/position-size/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/position-size/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/position-size/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../tr/tools/position-size/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/position-size/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/position-size/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/position-size/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/position-size/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/position-size/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/position-size/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

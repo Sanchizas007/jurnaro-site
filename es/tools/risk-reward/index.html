@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Calculadora de ratio riesgo/beneficio — y la tasa de acierto necesaria</title>
+<meta name="description" content="Compara lo que arriesgas con lo que puedes ganar y mira la tasa de acierto con la que la operación queda en tablas.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/es/tools/risk-reward/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/risk-reward/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/risk-reward/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/risk-reward/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/risk-reward/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/risk-reward/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/risk-reward/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/risk-reward/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/risk-reward/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/risk-reward/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/risk-reward/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/risk-reward/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/risk-reward/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/risk-reward/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/risk-reward/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/risk-reward/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/risk-reward/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/risk-reward/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/risk-reward/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/risk-reward/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/risk-reward/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/risk-reward/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Calculadora de ratio riesgo/beneficio — y la tasa de acierto necesaria">
+<meta property="og:description" content="Compara lo que arriesgas con lo que puedes ganar y mira la tasa de acierto con la que la operación queda en tablas.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/es/tools/risk-reward/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de riesgo/beneficio", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Compara lo que arriesgas con lo que puedes ganar y mira la tasa de acierto con la que la operación queda en tablas.", "inLanguage": "es", "url": "https://sanchizas007.github.io/jurnaro-site/es/tools/risk-reward/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/es/"}, {"@type": "ListItem", "position": 2, "name": "Calculadoras", "item": "https://sanchizas007.github.io/jurnaro-site/es/tools/"}, {"@type": "ListItem", "position": 3, "name": "Calculadora de ratio riesgo/beneficio", "item": "https://sanchizas007.github.io/jurnaro-site/es/tools/risk-reward/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../es/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../es/">Jurnaro</a><a href="../../../es/tools/" aria-current="page">Calculadoras</a><a href="../../../es/guide/">Guía</a><a href="../../../es/privacy/">Privacidad</a><a href="../../../es/terms/">Términos</a><a href="../../../es/support/">Soporte</a></div></header>
+<main><div class="wrap">
+
+<h1>Calculadora de riesgo/beneficio</h1>
+<p class="lede">Escribe la entrada, el stop y el objetivo. La calculadora da la relación beneficio/riesgo y la tasa de acierto que necesitas solo para no perder con esa relación.</p>
+
+<div class="stub" id="calc" data-kind="rr">
+  <div class="fields"><div><label for="in-entry">Precio de entrada</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">Stop loss</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-target">Objetivo</label><div class="in"><input id="in-target" data-in="target" type="number" inputmode="decimal" step="any" value="1.0940"></div></div></div>
+  <div class="results"><div class="row"><span>Ganancia : riesgo</span><span data-out="ratio">—</span></div><div class="row"><span>Tasa de acierto de equilibrio</span><span data-out="be">—</span></div></div>
+</div>
+
+<h2>Cómo funciona</h2>
+<p>Beneficio : riesgo = distancia de la entrada al objetivo ÷ distancia de la entrada al stop. Tasa de acierto de equilibrio = 1 ÷ (1 + relación). Con 1 : 2 necesitas ganar una operación de cada tres; con 1 : 1, una de cada dos, antes de comisiones.</p>
+<div class="card"><p>Estas calculadoras hacen aritmética con los números que escribes. No son asesoramiento de inversión. Comprueba el resultado con las especificaciones del contrato de tu bróker antes de operar.</p></div>
+
+<h2>Guarda los números en un diario</h2>
+<p>Jurnaro lo hace dentro del diario: rellena tu saldo y tu riesgo, dimensiona la operación antes de abrirla y guarda cada resultado para que veas qué funciona.</p>
+<p><a href="../../../es/">Sobre Jurnaro</a> · <a href="../../../es/guide/">Qué anotar en un diario de trading</a></p>
+
+<h2>Más calculadoras</h2>
+<ul class="tools-list"><li><a href="../../../es/tools/position-size/">Calculadora de tamaño de posición<small>Calcula cuántos lotes o acciones operar para que un stop te cueste el porcentaje de tu cuenta que elegiste.</small></a></li><li><a href="../../../es/tools/pip-value/">Calculadora del valor del pip<small>Averigua cuánto vale un pip para los lotes que operas, en la divisa de cotización del par.</small></a></li><li><a href="../../../es/tools/expectancy/">Calculadora de esperanza matemática<small>Convierte tu tasa de acierto, tu ganancia media y tu pérdida media en el resultado medio por operación, en dinero y en R.</small></a></li><li><a href="../../../es/tools/drawdown-recovery/">Calculadora de recuperación de drawdown<small>Mira cuánto debes ganar para recuperar una pérdida y por qué los drawdowns profundos cuesta tanto remontarlos.</small></a></li><li><a href="../../../es/tools/compounding/">Calculadora de interés compuesto<small>Mira en qué se convierte con el tiempo una ganancia mensual constante, con o sin aportaciones.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Última actualización: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/risk-reward/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/risk-reward/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/risk-reward/" hreflang="fr" lang="fr">Français</a> <a href="../../../pt-BR/tools/risk-reward/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/risk-reward/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/risk-reward/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/risk-reward/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/risk-reward/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/risk-reward/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/risk-reward/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../nl/tools/risk-reward/" hreflang="nl" lang="nl">Nederlands</a> <a href="../../../pl/tools/risk-reward/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/risk-reward/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/risk-reward/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/risk-reward/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/risk-reward/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/risk-reward/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/risk-reward/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/risk-reward/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>

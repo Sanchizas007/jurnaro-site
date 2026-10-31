@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050A09">
+<title>Positiegroottecalculator — lots uit saldo, risico en stop</title>
+<meta name="description" content="Bereken hoeveel lots of aandelen je moet handelen zodat een stop-out het gekozen percentage van je rekening kost.">
+<link rel="canonical" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/jurnaro-site/de/tools/position-size/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/jurnaro-site/fr/tools/position-size/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/jurnaro-site/es/tools/position-size/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/jurnaro-site/pt-BR/tools/position-size/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/jurnaro-site/it/tools/position-size/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/jurnaro-site/ja/tools/position-size/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/jurnaro-site/ko/tools/position-size/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/jurnaro-site/ru/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/jurnaro-site/zh-Hans/tools/position-size/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/jurnaro-site/zh-Hant/tools/position-size/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/jurnaro-site/pl/tools/position-size/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/jurnaro-site/tr/tools/position-size/">
+<link rel="alternate" hreflang="uk" href="https://sanchizas007.github.io/jurnaro-site/uk/tools/position-size/">
+<link rel="alternate" hreflang="ar" href="https://sanchizas007.github.io/jurnaro-site/ar/tools/position-size/">
+<link rel="alternate" hreflang="id" href="https://sanchizas007.github.io/jurnaro-site/id/tools/position-size/">
+<link rel="alternate" hreflang="th" href="https://sanchizas007.github.io/jurnaro-site/th/tools/position-size/">
+<link rel="alternate" hreflang="vi" href="https://sanchizas007.github.io/jurnaro-site/vi/tools/position-size/">
+<link rel="alternate" hreflang="hi" href="https://sanchizas007.github.io/jurnaro-site/hi/tools/position-size/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/jurnaro-site/en/tools/position-size/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jurnaro">
+<meta property="og:title" content="Positiegroottecalculator — lots uit saldo, risico en stop">
+<meta property="og:description" content="Bereken hoeveel lots of aandelen je moet handelen zodat een stop-out het gekozen percentage van je rekening kost.">
+<meta property="og:url" content="https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/">
+<meta property="og:image" content="https://sanchizas007.github.io/jurnaro-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="stylesheet" href="../../../assets/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Positiegroottecalculator", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "description": "Bereken hoeveel lots of aandelen je moet handelen zodat een stop-out het gekozen percentage van je rekening kost.", "inLanguage": "nl", "url": "https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Jurnaro", "item": "https://sanchizas007.github.io/jurnaro-site/nl/"}, {"@type": "ListItem", "position": 2, "name": "Rekenmachines", "item": "https://sanchizas007.github.io/jurnaro-site/nl/tools/"}, {"@type": "ListItem", "position": 3, "name": "Positiegroottecalculator", "item": "https://sanchizas007.github.io/jurnaro-site/nl/tools/position-size/"}]}</script>
+</head>
+<body>
+<header><div class="wrap bar"><a class="brand" href="../../../nl/"><img src="../../../icon.png" alt="">Jurnaro</a><a href="../../../nl/">Jurnaro</a><a href="../../../nl/tools/" aria-current="page">Rekenmachines</a><a href="../../../nl/guide/">Gids</a><a href="../../../nl/privacy/">Privacy</a><a href="../../../nl/terms/">Voorwaarden</a><a href="../../../nl/support/">Support</a></div></header>
+<main><div class="wrap">
+
+<h1>Positiegroottecalculator</h1>
+<p class="lede">Voer je saldo in, het percentage dat je wilt verliezen, en waar je instapt en waar je stop staat. De rekenmachine geeft het risicobedrag en de grootte die het verlies tot dat bedrag beperkt.</p>
+
+<div class="stub" id="calc" data-kind="size">
+  <div class="fields"><div><label for="in-balance">Saldo</label><div class="in"><input id="in-balance" data-in="balance" type="number" inputmode="decimal" step="any" value="10000"></div></div><div><label for="in-risk">Risico per trade</label><div class="in"><input id="in-risk" data-in="risk" type="number" inputmode="decimal" step="any" value="1"><span class=sfx>%</span></div></div><div><label for="in-entry">Instapprijs</label><div class="in"><input id="in-entry" data-in="entry" type="number" inputmode="decimal" step="any" value="1.0850"></div></div><div><label for="in-stop">Stop-loss</label><div class="in"><input id="in-stop" data-in="stop" type="number" inputmode="decimal" step="any" value="1.0820"></div></div><div><label for="in-pv">Waarde van 1,0 beweging per lot</label><div class="in"><input id="in-pv" data-in="pv" type="number" inputmode="decimal" step="any" value="100000"></div></div></div>
+  <div class="results"><div class="row"><span>Risicobedrag</span><span data-out="amount">—</span></div><div class="row"><span>Positiegrootte</span><span data-out="size">—</span></div></div>
+</div>
+
+<h2>Hoe het werkt</h2>
+<p>Grootte = risicobedrag ÷ (afstand van instap tot stop × waarde van een beweging van 1,0 per lot). Bij een standaard forexlot is die waarde 100.000 in de koersvaluta; bij één aandeel 1. Controleer altijd de contractgrootte bij je broker.</p>
+<div class="card"><p>Deze rekenmachines doen rekenwerk met de getallen die je invoert. Het is geen beleggingsadvies. Controleer het resultaat met de contractspecificaties van je broker voordat je handelt.</p></div>
+
+<h2>Bewaar de cijfers in een dagboek</h2>
+<p>Jurnaro doet dit in het dagboek zelf: het vult je saldo en je risico in, bepaalt de grootte van de trade voordat je hem plaatst en bewaart elk resultaat, zodat je ziet wat werkt.</p>
+<p><a href="../../../nl/">Over Jurnaro</a> · <a href="../../../nl/guide/">Wat je opschrijft in een tradingdagboek</a></p>
+
+<h2>Meer rekenmachines</h2>
+<ul class="tools-list"><li><a href="../../../nl/tools/risk-reward/">Risico/rendement-calculator<small>Vergelijk wat je riskeert met wat je kunt winnen en zie het winstpercentage waarbij de trade quitte speelt.</small></a></li><li><a href="../../../nl/tools/pip-value/">Pipwaarde-calculator<small>Ontdek wat één pip waard is voor de lots die je handelt, in de koersvaluta van het paar.</small></a></li><li><a href="../../../nl/tools/expectancy/">Verwachtingswaarde-calculator<small>Maak van je winstpercentage, gemiddelde winst en gemiddeld verlies het gemiddelde resultaat per trade, in geld en in R.</small></a></li><li><a href="../../../nl/tools/drawdown-recovery/">Drawdownherstel-calculator<small>Zie hoeveel je moet winnen om een verlies goed te maken en waarom diepe drawdowns zo moeilijk te herstellen zijn.</small></a></li><li><a href="../../../nl/tools/compounding/">Samengestelde-rente-calculator<small>Zie waartoe een constante maandwinst, met of zonder stortingen, in de loop van de tijd groeit.</small></a></li></ul>
+<script src="../../../assets/calc.js" defer></script>
+
+</div></main>
+<footer><div class="wrap">
+<p>Jurnaro · <a href="mailto:mrzhownir1994@gmail.com">mrzhownir1994@gmail.com</a><br>Laatst bijgewerkt: 2026-10-31</p>
+<p class="langs"><a href="../../../en/tools/position-size/" hreflang="en" lang="en">English</a> <a href="../../../de/tools/position-size/" hreflang="de" lang="de">Deutsch</a> <a href="../../../fr/tools/position-size/" hreflang="fr" lang="fr">Français</a> <a href="../../../es/tools/position-size/" hreflang="es" lang="es">Español</a> <a href="../../../pt-BR/tools/position-size/" hreflang="pt-BR" lang="pt-BR">Português</a> <a href="../../../it/tools/position-size/" hreflang="it" lang="it">Italiano</a> <a href="../../../ja/tools/position-size/" hreflang="ja" lang="ja">日本語</a> <a href="../../../ko/tools/position-size/" hreflang="ko" lang="ko">한국어</a> <a href="../../../ru/tools/position-size/" hreflang="ru" lang="ru">Русский</a> <a href="../../../zh-Hans/tools/position-size/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../../../zh-Hant/tools/position-size/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../../../pl/tools/position-size/" hreflang="pl" lang="pl">Polski</a> <a href="../../../tr/tools/position-size/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../../uk/tools/position-size/" hreflang="uk" lang="uk">Українська</a> <a href="../../../ar/tools/position-size/" hreflang="ar" lang="ar">العربية</a> <a href="../../../id/tools/position-size/" hreflang="id" lang="id">Indonesia</a> <a href="../../../th/tools/position-size/" hreflang="th" lang="th">ไทย</a> <a href="../../../vi/tools/position-size/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../../../hi/tools/position-size/" hreflang="hi" lang="hi">हिन्दी</a></p>
+</div></footer>
+</body>
+</html>
